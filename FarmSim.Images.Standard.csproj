@@ -9,9 +9,7 @@
     <RunPostBuildAppCondition Condition="'$(Configuration)' == 'Release'">true</RunPostBuildAppCondition>
     <FeedType>Public</FeedType>
   </PropertyGroup>
-	<PropertyGroup>
-		<StaticWebAssetBasePath>_content/FarmSim.Images.Standard</StaticWebAssetBasePath>
-	</PropertyGroup>
+	
   <Target Name="RunImageEmbedder" BeforeTargets="BeforeBuild">
     <Exec Command="where PngImageStaticWebAsset" IgnoreExitCode="true">
       <Output TaskParameter="ExitCode" PropertyName="_HasToolExitCode" />

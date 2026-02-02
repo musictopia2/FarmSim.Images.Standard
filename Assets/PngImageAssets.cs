@@ -15,6 +15,7 @@ public static class PngImageAssets
     public const string FinishSingleWorkshop = "FinishSingleWorkshop";
     public const string FinishSingleWorksite = "FinishSingleWorksite";
     public const string Orders = "Orders";
+    public const string Padlock = "Padlock";
     public const string PowerGloveWorkshop = "PowerGloveWorkshop";
     public const string PowerGloveWorksite = "PowerGloveWorksite";
     public const string Silo = "Silo";
@@ -39,6 +40,7 @@ public static class PngImageAssets
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("FinishSingleWorkshop", "/_content/FarmSim.Images.Standard/FinishSingleWorkshop.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("FinishSingleWorksite", "/_content/FarmSim.Images.Standard/FinishSingleWorksite.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Orders", "/_content/FarmSim.Images.Standard/Orders.png");
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Padlock", "/_content/FarmSim.Images.Standard/Padlock.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("PowerGloveWorkshop", "/_content/FarmSim.Images.Standard/PowerGloveWorkshop.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("PowerGloveWorksite", "/_content/FarmSim.Images.Standard/PowerGloveWorksite.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Silo", "/_content/FarmSim.Images.Standard/Silo.png");
