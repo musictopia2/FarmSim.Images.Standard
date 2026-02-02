@@ -3,16 +3,24 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
+	  <PackageId>Musictopia.FarmSim.Images.Standard</PackageId>
+	  <StaticWebAssetBasePath>_content/FarmSim.Images.Standard</StaticWebAssetBasePath>
     <ImplicitUsings>enable</ImplicitUsings>
     <RunPostBuildAppCondition Condition="'$(Configuration)' == 'Release'">true</RunPostBuildAppCondition>
     <FeedType>Public</FeedType>
   </PropertyGroup>
+	<PropertyGroup>
+		<StaticWebAssetBasePath>_content/FarmSim.Images.Standard</StaticWebAssetBasePath>
+	</PropertyGroup>
   <Target Name="RunImageEmbedder" BeforeTargets="BeforeBuild">
     <Exec Command="where PngImageStaticWebAsset" IgnoreExitCode="true">
       <Output TaskParameter="ExitCode" PropertyName="_HasToolExitCode" />
     </Exec>
     <Exec Condition="'$(_HasToolExitCode)' == '0'" Command="PngImageStaticWebAsset $(ProjectName) $(ProjectDir) $(ProjectFileName)" ContinueOnError="true" />
   </Target>
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
   <ItemGroup>
     <PackageReference Include="CommonBasicLibraries" Version="10.0.16" />
   </ItemGroup>
